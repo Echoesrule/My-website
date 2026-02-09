@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Kemboi | Full-Stack Developer</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Full-stack developer and computer science student specializing in modern web development.">
+    <meta name="keywords" content="web developer, full-stack, react, nodejs, portfolio">
+    <meta name="author" content="Emmanuel Kemboi">
+    
+    <!-- OG Tags -->
+    <meta property="og:title" content="Emmanuel Kemboi | Full-Stack Developer">
+    <meta property="og:description" content="Building modern web applications with cutting-edge technologies.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700;800&family=Satoshi:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0a0a0f">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">LOADING PORTFOLIO</div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+    
+    <!-- Background Effects -->
+    <div class="bg-grid"></div>
+    <div class="bg-gradient"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#home" class="nav-logo">
+                <span class="logo-symbol">⟨</span>
+                <span class="logo-text">E.K</span>
+                <span class="logo-symbol">⟩</span>
+            </a>
+            
+            <!-- Navigation Links -->
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link" data-index="01">
+                            <span class="nav-text">Home</span>
+                            <span class="nav-line"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" data-index="02">
+                            <span class="nav-text">About</span>
+                            <span class="nav-line"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link" data-index="03">
+                            <span class="nav-text">Skills</span>
+                            <span class="nav-line"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link" data-index="04">
+                            <span class="nav-text">Projects</span>
+                            <span class="nav-line"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link" data-index="05">
+                            <span class="nav-text">Experience</span>
+                            <span class="nav-line"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-index="06">
+                            <span class="nav-text">Contact</span>
+                            <span class="nav-line"></span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <!-- Social Links -->
+                <div class="nav-social">
+                    <a href="https://github.com/Echoesrule" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                
+                <!-- Theme Toggle -->
+                <div class="theme-toggle">
+                    <button id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="nav-toggle" id="navToggle">
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section">
+            <div class="container">
+                <div class="hero-grid">
+                    <!-- Left Column -->
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <span class="badge-text">FULL-STACK DEVELOPER</span>
+                            <div class="badge-dot"></div>
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            <span class="title-line">
+                                <span class="text-reveal">Building Digital</span>
+                            </span>
+                            <span class="title-line">
+                                <span class="text-reveal">Experiences That</span>
+                            </span>
+                            <span class="title-line">
+                                <span class="text-reveal text-gradient">Inspire & Innovate</span>
+                            </span>
+                        </h1>
+                        
+                        <p class="hero-description">
+                            I'm <strong>Emmanuel Kemboi</strong>, a passionate full-stack developer and computer science student 
+                            crafting cutting-edge web solutions with modern technologies and innovative design.
+                        </p>
+                        
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary">
+                                <span>Explore Projects</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-outline">
+                                <span>Contact Me</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="25">0</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="98">0</div>
+                                <div class="stat-label">Client Satisfaction</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="3">0</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column -->
+                    <div class="hero-visual">
+                        <div class="visual-container">
+                            <!-- 3D Cube -->
+                            <div class="floating-cube">
+                                <div class="cube-face front">REACT</div>
+                                <div class="cube-face back">NODE</div>
+                                <div class="cube-face right">PYTHON</div>
+                                <div class="cube-face left">JAVA</div>
+                                <div class="cube-face top">WEB</div>
+                                <div class="cube-face bottom">DEV</div>
+                            </div>
+                            
+                            <!-- Profile Image -->
+                            <div class="profile-orb">
+                                <div class="orb-outer">
+                                    <div class="orb-inner">
+                                        <img src="images/pfp5.jpg" alt="Emmanuel Kemboi" class="profile-image">
+                                    </div>
+                                </div>
+                                <div class="orb-ring"></div>
+                            </div>
+                            
+                            <!-- Floating Elements -->
+                            <div class="floating-elements">
+                                <div class="float-element" style="--delay: 0s">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <div class="float-element" style="--delay: 1s">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <div class="float-element" style="--delay: 2s">
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <div class="float-element" style="--delay: 3s">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <div class="scroll-text">Scroll</div>
+                    <div class="scroll-line">
+                        <div class="scroll-progress"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">ABOUT ME</span>
+                    <h2 class="section-title">The Developer Behind The Code</h2>
+                    <p class="section-subtitle">Crafting digital solutions with passion and precision</p>
+                </div>
+                
+                <div class="about-content">
+                    <!-- About Image -->
+                    <div class="about-image">
+                        <div class="image-container">
+                            <img src="images/me.png" alt="About Emmanuel" class="main-image">
+                            <div class="image-overlay"></div>
+                            <div class="experience-badge">
+                                <div class="badge-content">
+                                    <span class="badge-number">3+</span>
+                                    <span class="badge-text">Years Experience</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- About Info -->
+                    <div class="about-info">
+                        <div class="info-header">
+                            <h3>Emmanuel Kemboi</h3>
+                            <p class="role">Full-Stack Developer & Computer Science Student</p>
+                        </div>
+                        
+                        <div class="info-description">
+                            <p>
+                                I specialize in creating modern, responsive web applications that deliver exceptional user experiences. 
+                                With a strong foundation in both frontend and backend technologies, I build scalable solutions that 
+                                solve real-world problems.
+                            </p>
+                            <p>
+                                Currently pursuing my degree in Computer Science while working on freelance projects, 
+                                I'm constantly expanding my skill set and staying updated with the latest industry trends.
+                            </p>
+                        </div>
+                        
+                        <div class="info-details">
+                            <div class="detail-item">
+                                <i class="fas fa-user"></i>
+                                <div>
+                                    <h4>Name</h4>
+                                    <p>Emmanuel Kemboi</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>kemboimmanueli@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Nairobi, Kenya</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Education</h4>
+                                    <p>B.Sc Computer Science</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-actions">
+                            <a href="files/resume.pdf" download class="btn btn-primary">
+                                <i class="fas fa-download"></i>
+                                Download CV
+                            </a>
+                            <a href="#contact" class="btn btn-outline">
+                                <i class="fas fa-comment"></i>
+                                Let's Talk
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Services -->
+                <div class="services-section">
+                    <h3 class="services-title">What I Offer</h3>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Web Development</h4>
+                            <p>Custom web applications built with modern frameworks and best practices.</p>
+                            <div class="service-tech">
+                                <span>React</span>
+                                <span>Vue</span>
+                                <span>Next.js</span>
+                            </div>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h4>Backend Solutions</h4>
+                            <p>Robust API development and server-side logic for scalable applications.</p>
+                            <div class="service-tech">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h4>UI/UX Design</h4>
+                            <p>Intuitive and engaging user interfaces with focus on user experience.</p>
+                            <div class="service-tech">
+                                <span>Figma</span>
+                                <span>Adobe XD</span>
+                                <span>Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">TECHNICAL SKILLS</span>
+                    <h2 class="section-title">Technologies I Work With</h2>
+                    <p class="section-subtitle">Mastering the tools that power modern web development</p>
+                </div>
+                
+                <div class="skills-container">
+                    <!-- Frontend Skills -->
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-desktop"></i>
+                            Frontend Development
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-level="95">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-html5"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h4>HTML5</h4>
+                                        <span class="skill-level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="95"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item" data-level="90">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-css3-alt"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h4>CSS3</h4>
+                                        <span class="skill-level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="90"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item" data-level="85">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-js"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h4>JavaScript</h4>
+                                        <span class="skill-level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="85"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item" data-level="80">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-react"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h4>React.js</h4>
+                                        <span class="skill-level">Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Backend Skills -->
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-server"></i>
+                            Backend & Databases
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-level="75">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-php"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h4>PHP</h4>
+                                        <span class="skill-level">Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="75"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item" data-level="70">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-java"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h4>Java</h4>
+                                        <span class="skill-level">Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="70"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item" data-level="80">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-python"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h4>Python</h4>
+                                        <span class="skill-level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="80"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item" data-level="85">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h4>MySQL</h4>
+                                        <span class="skill-level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tools & Others -->
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-tools"></i>
+                            Tools & Others
+                        </h3>
+                        <div class="tools-grid">
+                            <div class="tool-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fab fa-docker"></i>
+                                <span>Docker</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fab fa-aws"></i>
+                                <span>AWS</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fas fa-terminal"></i>
+                                <span>CLI</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fas fa-code-branch"></i>
+                                <span>REST API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">PORTFOLIO</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Showcasing my recent work and development process</p>
+                </div>
+                
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                    <button class="filter-btn" data-filter="design">UI/UX</button>
+                </div>
+                
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Projects will be loaded via JavaScript -->
+                </div>
+                
+                <div class="projects-cta">
+                    <a href="https://github.com/Echoesrule" target="_blank" class="btn btn-outline">
+                        <i class="fab fa-github"></i>
+                        View All Projects on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">JOURNEY</span>
+                    <h2 class="section-title">Experience & Education</h2>
+                    <p class="section-subtitle">My professional journey and academic background</p>
+                </div>
+                
+                <div class="timeline">
+                    <!-- Experience -->
+                    <div class="timeline-category">
+                        <h3 class="timeline-title">
+                            <i class="fas fa-briefcase"></i>
+                            Experience
+                        </h3>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2023 - Present</span>
+                                    <h4>Freelance Full-Stack Developer</h4>
+                                    <p>Developing custom web applications for clients worldwide, focusing on scalable solutions and modern tech stacks.</p>
+                                    <div class="timeline-tech">
+                                        <span>React</span>
+                                        <span>Node.js</span>
+                                        <span>MongoDB</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2022 - 2023</span>
+                                    <h4>Web Development Intern</h4>
+                                    <p>Assisted in developing and maintaining company websites, implementing responsive designs and optimizing performance.</p>
+                                    <div class="timeline-tech">
+                                        <span>HTML/CSS</span>
+                                        <span>JavaScript</span>
+                                        <span>PHP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education -->
+                    <div class="timeline-category">
+                        <h3 class="timeline-title">
+                            <i class="fas fa-graduation-cap"></i>
+                            Education
+                        </h3>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2022 - Present</span>
+                                    <h4>Bachelor of Science in Computer Science</h4>
+                                    <p>Currently pursuing degree with focus on software engineering, algorithms, and web technologies.</p>
+                                    <div class="timeline-tech">
+                                        <span>Data Structures</span>
+                                        <span>Algorithms</span>
+                                        <span>Database Systems</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2021 - 2022</span>
+                                    <h4>Web Development Certification</h4>
+                                    <p>Completed comprehensive web development program covering frontend and backend technologies.</p>
+                                    <div class="timeline-tech">
+                                        <span>Full-Stack</span>
+                                        <span>MERN Stack</span>
+                                        <span>Responsive Design</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">GET IN TOUCH</span>
+                    <h2 class="section-title">Let's Build Something Amazing</h2>
+                    <p class="section-subtitle">Have a project in mind? Let's discuss how we can bring it to life</p>
+                </div>
+                
+                <div class="contact-content">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <p>kemboimmanueli@gmail.com</p>
+                                <a href="mailto:kemboimmanueli@gmail.com" class="info-link">
+                                    Send Message <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Location</h4>
+                                <p>Nairobi, Kenya</p>
+                                <a href="#" class="info-link">
+                                    View on Map <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Availability</h4>
+                                <p>Monday - Friday</p>
+                                <p>9:00 AM - 6:00 PM EAT</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Your Name" required>
+                                <div class="form-line"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Your Email" required>
+                                <div class="form-line"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="text" id="subject" placeholder="Subject" required>
+                                <div class="form-line"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea id="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+                                <div class="form-line"></div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">FAQ</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Common questions about my services and process</p>
+                </div>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What's your development process?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>I follow an agile development process: Discovery & Planning → Design → Development → Testing → Deployment → Maintenance. Regular communication and iterations ensure the final product meets your expectations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What technologies do you specialize in?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>I work with modern technologies including React, Node.js, Express, MongoDB, PHP, Python, Java, and MySQL. I'm constantly learning and adapting to new tools and frameworks to deliver the best solutions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you provide ongoing maintenance?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, I offer maintenance packages to ensure your application remains secure, updated, and performs optimally. This includes bug fixes, updates, security patches, and performance optimization.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What's your pricing structure?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Pricing depends on project complexity, scope, and timeline. I offer both fixed-price projects for well-defined scopes and hourly rates for ongoing work. Contact me for a detailed quote.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How do you handle project communication?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>I maintain regular communication through your preferred channels (email, Slack, Zoom). Weekly updates, progress reports, and milestone reviews ensure you're always informed about project status.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <a href="#home" class="footer-logo">E.K</a>
+                        <p>Building the future, one line of code at a time.</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-services">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#projects">Web Development</a></li>
+                            <li><a href="#projects">Mobile Apps</a></li>
+                            <li><a href="#projects">UI/UX Design</a></li>
+                            <li><a href="#contact">Consulting</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <h4>Contact Info</h4>
+                        <p><i class="fas fa-envelope"></i> kemboimmanueli@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                        <div class="footer-social">
+                            <a href="https://github.com/Echoesrule" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-codepen"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Emmanuel Kemboi. All rights reserved.</p>
+                    <p>Built with <i class="fas fa-heart"></i> and modern web technologies</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript Files -->
+    <script src="script.js"></script>
+    <script src="assets/js/effects.js"></script>
+</body>
+</html>

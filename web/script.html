@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Is this JavaScript?</h1>
+    <ul id="parent">
+    <li>Hello js</li>
+
+    </ul>
+</body>
+</html>
+
+<script>
+    var adj="Awesome";
+    var str="I am\t";
+    str+=adj
+    console.log(str);
+    namelength=0;
+    name="Baby Yoda";
+    namelength=name.length;
+    console.log(namelength);
+    //finding first character of string
+    var firstname="John";
+    var index=firstname[3];
+    console.log(index);
+    firstname[0]="R";
+    console.log(firstname);
+
+    let array=["Money\t","Power\t","Respect\t"];
+    let element="";
+    for (let i = 0; i < array.length; i++) {
+         element+= array[i];
+        
+    }
+let output=document.createElement("li");
+output.innerHTML=element;
+document.getElementById("parent").appendChild(output);
+
+function wordBank(myNoun,myAdj,myVerb,myAdverb){
+    let result="";
+    result+="The "+myAdj+" "+myNoun+" "+myVerb+" "+"to the store";
+    return result; 
+}
+console.log(wordBank("Dog","big","ran","quickly"));
+
+
+//nested arrays
+let myarray=[["Emmanuel",21],["Sukuna",500],["Alaxa",20],["Amanda",25]];
+console.log(myarray[0]);
+var details=myarray[0][0];
+console.log(details);
+let elem="";
+for (let j =0;j<myarray.length; j++){
+elem+=myarray[j][0]+"\n";
+}
+console.log(elem);
+
+
+//pop()=removes last index in the array
+//shift()=removes first element in the array
+//unshift()=add new elemnt at the beginning of the array
+//using pop() fuction in arrays
+var names=["Dog","Cat","Hen","Pig"];
+//var removedNames=names.pop();
+//var removedNames=names.shift();
+var removedNames=names.unshift("puppy");
+
+
+console.log(names);
+console.log(removedNames); 
+</script>
